@@ -40,7 +40,7 @@ A scalable backend system for tracking and analyzing user activity with secure a
 ## ⚙️ Setup Instructions
 
 ```bash
-git clone https://github.com/muskan_mishra/user-activity-analytics-api.git
+git clone https://github.com/muskan_mishra24/user-activity-analytics-api.git
 cd user-activity-analytics-api
 npm install
 npm run dev
