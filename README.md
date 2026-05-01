@@ -64,19 +64,19 @@ Modern applications need to understand user behavior. This API helps:
 
 ### 🔐 Login (JWT Authentication)
 
-![Login](./screenshots/login.png)
+![Login](./Screenshots/Login.png)
 
 ---
 
 ### 📝 Create Log
 
-![Create Log](./screenshots/create-log.png)
+![Create Log](./Screenshots/Createlog.png)
 
 ---
 
 ### 🔍 Get Logs (Filtering + Pagination)
 
-![Get Logs](./screenshots/get-logs.png)
+![Get Logs](./screenshots/Get-logs.png)
 
 ---
 
