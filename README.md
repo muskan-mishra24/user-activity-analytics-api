@@ -70,25 +70,25 @@ Modern applications need to understand user behavior. This API helps:
 
 ### 📝 Create Log
 
-![Create Log](./Screenshots/CreateLog.png)
+![Create Log](./Screenshots/Create-Log.png)
 
 ---
 
 ### 🔍 Get Logs (Filtering + Pagination)
 
-![Get Logs](./screenshots/Get-logs.png)
+![Get Logs](./Screenshots/Get-logs.png)
 
 ---
 
 ### 📊 Daily Analytics
 
-![Daily Analytics](./screenshots/daily-analytics.png)
+![Daily Analytics](./Screenshots/daily-analytics.png)
 
 ---
 
 ### 👤 User Analytics
 
-![User Analytics](./screenshots/user-analytics.png)
+![User Analytics](./Screenshots/user-analytics.png)
 
 ## 🧪 How to Test
 
