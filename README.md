@@ -70,7 +70,7 @@ Modern applications need to understand user behavior. This API helps:
 
 ### 📝 Create Log
 
-![Create Log](./Screenshots/Create Log.png)
+![Create Log](./Screenshots/CreateLog.png)
 
 ---
 
