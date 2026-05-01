@@ -60,6 +60,35 @@ Modern applications need to understand user behavior. This API helps:
 * `GET /api/analytics/users` – User-wise analytics
 
 ---
+## 📸 API Preview
+
+### 🔐 Login (JWT Authentication)
+
+![Login](./screenshots/login.png)
+
+---
+
+### 📝 Create Log
+
+![Create Log](./screenshots/create-log.png)
+
+---
+
+### 🔍 Get Logs (Filtering + Pagination)
+
+![Get Logs](./screenshots/get-logs.png)
+
+---
+
+### 📊 Daily Analytics
+
+![Daily Analytics](./screenshots/daily-analytics.png)
+
+---
+
+### 👤 User Analytics
+
+![User Analytics](./screenshots/user-analytics.png)
 
 ## 🧪 How to Test
 
