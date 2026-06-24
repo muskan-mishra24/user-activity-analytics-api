@@ -64,9 +64,7 @@ exports.getStats = async (req, res) => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
-    const todayLogs = await Log.countDocuments({
-      timestamp: { $gte: today },
-    });
+    const todayLogs = await Log.countDocuments();
 
     res.json({
       totalUsers,
