@@ -1,10 +1,16 @@
-const Log = require('../models/Log');
+const Log = require("../models/Log");
+const User = require("../models/User");
 
 exports.getDailyLogs = async (req, res) => {
   const logs = await Log.aggregate([
     {
       $group: {
-        _id: { $dateToString: { format: "%Y-%m-%d", date: "$timestamp" } },
+        _id: {
+          $dateToString: {
+            format: "%Y-%m-%d",
+            date: "$timestamp"
+          }
+        },
         count: { $sum: 1 }
       }
     }
@@ -14,14 +20,38 @@ exports.getDailyLogs = async (req, res) => {
 };
 
 exports.getUserActivity = async (req, res) => {
-  const logs = await Log.aggregate([
-    {
-      $group: {
-        _id: "$userId",
-        actions: { $sum: 1 }
+  try {
+    const logs = await Log.aggregate([
+      {
+        $group: {
+          _id: "$userId",
+          actions: { $sum: 1 }
+        }
+      },
+      {
+        $lookup: {
+          from: "users",
+          localField: "_id",
+          foreignField: "_id",
+          as: "user"
+        }
+      },
+      {
+        $unwind: "$user"
+      },
+      {
+        $project: {
+          _id: 0,
+          email: "$user.email",
+          actions: 1
+        }
       }
-    }
-  ]);
+    ]);
 
-  res.json(logs);
+    res.json(logs);
+  } catch (error) {
+    res.status(500).json({
+      message: error.message
+    });
+  }
 };
