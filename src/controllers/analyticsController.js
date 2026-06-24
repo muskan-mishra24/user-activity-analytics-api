@@ -55,3 +55,27 @@ exports.getUserActivity = async (req, res) => {
     });
   }
 };
+exports.getStats = async (req, res) => {
+  try {
+    const totalUsers = await User.countDocuments();
+
+    const totalLogs = await Log.countDocuments();
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const todayLogs = await Log.countDocuments({
+      timestamp: { $gte: today },
+    });
+
+    res.json({
+      totalUsers,
+      totalLogs,
+      todayLogs,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: error.message,
+    });
+  }
+};
