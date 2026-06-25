@@ -9,6 +9,9 @@ A scalable backend system designed to track, store, and analyze user activity in
 🔗 **API Base URL:**
 https://user-activity-analytics-api-1.onrender.com
 
+**Frontend:** 
+https://user-activity-analytics-frontendmm.vercel.app/
+
 📌 You can test endpoints using Postman or any API client.
 
 ---
