@@ -7,7 +7,7 @@ A scalable backend system designed to track, store, and analyze user activity in
 ## 🌐 Live Demo
 
 🔗**Frontend:** 
-https://user-activity-analytics-fr-git-d13a00-muskan-mishra24s-projects.vercel.app/
+https://user-activity-analytics-frontendmm.vercel.app/
 
  **API Base URL:**
 https://user-activity-analytics-api-1.onrender.com
