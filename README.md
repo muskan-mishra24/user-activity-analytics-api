@@ -6,11 +6,11 @@ A scalable backend system designed to track, store, and analyze user activity in
 
 ## 🌐 Live Demo
 
-🔗 **API Base URL:**
-https://user-activity-analytics-api-1.onrender.com
-
-**Frontend:** 
+🔗**Frontend:** 
 https://user-activity-analytics-fr-git-d13a00-muskan-mishra24s-projects.vercel.app/
+
+ **API Base URL:**
+https://user-activity-analytics-api-1.onrender.com
 
 📌 You can test endpoints using Postman or any API client.
 
