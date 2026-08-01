@@ -12,7 +12,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://your-vercel-app.vercel.app"
+      "https://user-activity-analytics-fr-git-d13a00-muskan-mishra24s-projects.vercel.app/"
     ],
     credentials: true,
   })
